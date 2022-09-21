@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- GOOGLE FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&family=Zilla+Slab:wght@400;600&display=swap" rel="stylesheet">
+  <!-- STYLESHEETS -->
+  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="author" content="Snehamoy Bag">
+  <title>Freecodecamp Survey Form</title>
+</head>
+<body>
+  <header></header>
+  <main>
+    <header>
+      <h1 id="title">Freecodecamp Survey Form</h1>
+      <p id="description">Thank you for taking the time to help us improve the platform</p>
+    </header>
+    <form action="/" id="survey-form">
+      <fieldset>
+        <label for="name" id="name-label">
+          Name :
+          <input type="text" id="name" name="full-name" placeholder="Enter your name" value="" required />
+        </label>
+        <label for="email" id="email-label">
+          Email Address :
+          <input type="email" id="email" name="email" placeholder="Enter your Email" value="" required />
+        </label>
+        <label for="number" id="number-label">
+          Your Age (Optional) :
+          <input type="number" min="15" max="120" id="number" name="age" placeholder="Age" value="" />
+        </label>
+        <label for="dropdown">
+          Which option best describes your current role :
+          <select name="role" id="dropdown">
+            <option value="" hidden>Select current role</option>
+            <option value="1">Student</option>
+            <option value="2">Full Time Job</option>
+            <option value="3">Full Time Learner</option>
+            <option value="4">Prefer not to say</option>
+            <option value="5">Other</option>
+            </select>
+          </label>
+      </fieldset>
+      
+      <fieldset>
+        <legend>Would you recommend Freecodecamp to a friend?</legend>
+          <label for="recommend-yes">
+            <input type="radio" name="recommend" id="recommend-yes" value="1"> Yes.
+          </label>
+          <label for="recommend-maybe">
+            <input type="radio" name="recommend" id="recommend-maybe" value="2"> Maybe.
+          </label>
+          <label for="recommend-no">
+            <input type="radio" name="recommend" id="recommend-no" value="0"> No.
+          </label>
+        <label for="fav-feature">
+          What is your favorite feature of Freecodecamp?
+          <select name="favourite-feature" id="fav-feature">
+            <option value="" selected disabled>Choose one</option>
+            <option value="1">Challenges</option>
+            <option value="2">Projects</option>
+            <option value="3">Community</option>
+            <option value="4">Open source</option>
+          </select>
+        </label>
+      </fieldset>
+      
+      <fieldset>
+        <legend>
+          What would you like to see improved? (Check all that apply)
+        </legend>
+        <label for="frontend">
+          <input type="checkbox" name="front-end-projects" id="frontend" value="1"> Front -end Projects
+        </label>
+        <label for="backend">
+          <input type="checkbox" name="back-end-projects" id="backend" value="2"> Back-end Projects
+        </label>
+        <label for="data-visualization">
+          <input type="checkbox" name="data-visualization" id="data-visualization" value="3"> Data Visualization
+        </label>
+        <label for="challenges">
+          <input type="checkbox" name="challenges" id="challenges" value="4"> Challenges
+        </label>
+        <label for="open-source">
+          <input type="checkbox" name="open-source-community" id="open-source" value="5"> Open Source Community
+        </label>
+        <label for="forum">
+          <input type="checkbox" name="freecodecamp-forum" id="forum" value="6"> Freecodecamp Forum
+        </label>
+        <label for="videos">
+          <input type="checkbox" name="videos" id="videos" value="7"> Videos
+        </label>
+        <label for="wiki">
+          <input type="checkbox" name="wiki" id="wiki" value="8"> Wiki
+        </label>
+      </fieldset>
+      
+      <fieldset>
+        <legend>
+          Any comments or suggestions?
+        </legend>
+          <textarea name="txt-comment" id="txt-comment" cols="30" rows="5" placeholder="Enter your comment here..." aria-label="Any comments or suggestions?"></textarea>
+      </fieldset>
+      
+      <button type="submit" id="submit">Submit</button>
+    </form>
+  </main>
+  <footer></footer>
+</body>
+</html>
