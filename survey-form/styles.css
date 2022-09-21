@@ -107,7 +107,7 @@ main::after {
 
 main::before {
   z-index: -2;
-  background-image: url('https://images2.imgbox.com/18/ad/thSO966y_o.jpg');
+  background-image: url('images/coding-bg.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }
