@@ -1,0 +1,173 @@
+/* CSS CUSTOM PROPERTIES */
+:root {
+  --clr-primary-400: hsl(206, 100%, 60%);
+  
+  --clr-accent-400: hsl(25, 100%, 55%);
+  
+  --clr-neutral-100: hsl(0, 0%, 100%);
+  --clr-neutral-200: hsl(0, 0%, 90%);
+  --clr-neutral-800: hsl(0, 0%, 30%);
+  --clr-neutral-900: hsl(0, 0%, 0%);
+  
+  --ff-header-decorative: 'Lobster', cursive;
+  --ff-header-primary: 'Bebas Neue', cursive;
+  --ff-body-primary: 'Roboto Slab', serif;
+  
+  --fs-400: clamp(0.625rem, 3.75vw, 1.25rem);
+  --fs-600: clamp(0.75rem, 6vw, 1.5rem);
+  --fs-700: ;
+  --fs-900: ;
+  
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-semi-bold: 600;
+  --fw-bold: 700;
+  --fw-black: 900;
+}
+
+/* CSS RESET */
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default padding, margin and font styles */
+* {
+  padding: 0;
+  margin: 0;
+  font: inherit;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+html,
+body {
+  height: 100%;
+}
+
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  color: var(--clr-neutral-800);
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture,
+svg {
+  max-width: 100%;
+  display: block;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* STYLING (Mobile First) */
+body {
+  font-family: var(--ff-body-primary);
+  font-weight: var(--fw-regular);
+  font-size: var(--fs-400);
+}
+
+#header {
+  background-color: hsla(0, 0%, 0%, 0.7);
+  background-image: url('images/chhetri-back.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: darken;
+  line-height: 1.2;
+  padding: 4em 0;
+  margin-bottom: 4rem;
+}
+
+.title-name,
+.title-heading {
+  color: var(--clr-neutral-100);
+  text-align: center;
+}
+
+.title-name {
+  font-family: var(--ff-header-primary);
+  font-size: clamp(1rem, 4vw, 8rem);;
+  letter-spacing: 0.75em;
+  text-transform: uppercase;
+  opacity: 0.65;
+  margin-left: 1.35em;
+}
+
+.title-heading {
+  font-family: var(--ff-header-decorative);
+  font-size: clamp(1.5rem, 15vw, 15rem);
+}
+
+#main {
+  padding-bottom: 1em;
+}
+
+#main p {
+  line-height: 1.6;
+  padding: 0 2.25em;
+}
+
+#main p,
+#main figure {
+  margin-bottom: 3.5em;
+}
+
+strong {
+  font-weight: var(--fw-bold);
+}
+
+em {
+  font-style: italic;
+}
+
+#main figure {
+  padding: 0 1.75em;
+  background-color: var(--clr-primary-400);
+}
+
+#main figure img {
+  margin: 0 auto;
+  box-shadow: 0 7px 5px hsla(0, 0%, 0%, 0.25);
+}
+
+#main figure figcaption {
+  font-family: var(--ff-header-primary);
+  color: var(--clr-neutral-100);
+  letter-spacing: 0.175em;
+  text-align: center;
+  padding: 1em 0 1.25em;
+}

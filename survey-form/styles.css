@@ -116,7 +116,6 @@ main::after {
   z-index: -1;
   backdrop-filter: blur(3px);
 }
-
 form {
   background-color: var(--clr-neutral-100);
   width: 90%;
