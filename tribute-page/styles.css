@@ -206,3 +206,12 @@ em {
   text-decoration: underline dotted;
   color: var(--clr-primary-400);
 }
+
+#tribute-link:hover,
+#tribute-link:active {
+  color: var(--clr-accent-400);
+}
+
+#tribute-link:visited {
+  opacity: 0.5;
+}
