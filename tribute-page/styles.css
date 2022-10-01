@@ -13,10 +13,8 @@
   --ff-header-primary: 'Bebas Neue', cursive;
   --ff-body-primary: 'Roboto Slab', serif;
   
-  --fs-400: clamp(0.625rem, 3.75vw, 1.25rem);
-  --fs-600: clamp(0.75rem, 6vw, 1.5rem);
-  --fs-700: ;
-  --fs-900: ;
+  --fs-400: clamp(0.625rem, 3.75vw, 1.75rem);
+  --fs-600: clamp(0.75rem, 6vw, 2.25rem);
   
   --fw-light: 300;
   --fw-regular: 400;
@@ -72,8 +70,10 @@ a:not([class]) {
 /* Make images easier to work with */
 img,
 picture,
-svg {
+svg,
+#image {
   max-width: 100%;
+  height: auto;
   display: block;
 }
 
@@ -120,7 +120,7 @@ body {
 
 .title-name {
   font-family: var(--ff-header-primary);
-  font-size: clamp(1rem, 4vw, 8rem);;
+  font-size: clamp(1rem, 4vw, 4rem);
   letter-spacing: 0.75em;
   text-transform: uppercase;
   opacity: 0.65;
@@ -136,13 +136,18 @@ body {
   padding-bottom: 1em;
 }
 
-#main p {
+#main {
+  max-width: 75rem;
+  margin: 0 auto;
+}
+
+#tribute-info p {
   line-height: 1.6;
   padding: 0 2.25em;
 }
 
-#main p,
-#main figure {
+#tribute-info p,
+#tribute-info figure {
   margin-bottom: 3.5em;
 }
 
@@ -154,20 +159,50 @@ em {
   font-style: italic;
 }
 
-#main figure {
+#tribute-info figure {
   padding: 0 1.75em;
   background-color: var(--clr-primary-400);
 }
 
-#main figure img {
+#tribute-info figure img {
   margin: 0 auto;
   box-shadow: 0 7px 5px hsla(0, 0%, 0%, 0.25);
 }
 
-#main figure figcaption {
+#tribute-info figure figcaption {
   font-family: var(--ff-header-primary);
   color: var(--clr-neutral-100);
   letter-spacing: 0.175em;
   text-align: center;
   padding: 1em 0 1.25em;
+}
+
+#tribute-info h2 {
+  font-family: var(--ff-header-primary);
+  font-size: var(--fs-600);
+  font-weight: var(--fw-semi-bold);
+  letter-spacing: 0.1em;
+  padding: 0 1.5em 1em;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+#tribute-info h2::before {
+  content: '';
+  background-image: url('images/icons/link-solid.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  width: 1em;
+  aspect-ratio: 1/1;
+  margin-right: 0.5em;
+  opacity: 0.5;
+}
+
+#tribute-link {
+  margin-left: 0.25em;
+  font-weight: var(--fw-regular);
+  text-decoration: underline dotted;
+  color: var(--clr-primary-400);
 }
