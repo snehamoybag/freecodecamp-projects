@@ -1,0 +1,282 @@
+/* CSS CUSTOM PROPERTY */
+:root {
+  --clr-primary-400: hsl(58, 100%, 50%);
+  
+  --clr-neutral-100: hsl(0, 0%, 100%);
+  --clr-neutral-200: hsl(0, 0%, 95%);
+  --clr-neutral-400: hsl(54, 0%, 21%);
+  --clr-neutral-900: hsl(54, 0%, 5%);
+  
+  --ff-primary: 'PT Serif', serif;
+  --ff-secondary: 'Roboto', sans-serif;
+  --ff-heading: 'Kanit', sans-serif;;
+  
+  --fw-regular: 400;
+  --fw-semi-bold: 600;
+  --fw-bold: 700;
+  
+  --fs-200: clamp(0.5rem, 3.5vw, 1rem);
+  --fs-400: clamp(0.625rem, 4vw, 1.2rem);
+  --fs-700: clamp(1rem, 6vw, 1.65rem);
+  --fs-900: clamp(1.25rem, 7.5vw, 2.25rem);
+}
+
+/* CSS RESET */
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default padding, margin and font styles */
+* {
+  padding: 0;
+  margin: 0;
+  font: inherit;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+html,
+body {
+  height: 100%;
+}
+
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture,
+svg {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+   scroll-behavior: auto;
+  }
+  
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* STYLING (MOBILE FIRST) */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--clr-neutral-200);
+  font-family: var(--ff-primary);
+  font-size: var(--fs-400);
+  font-weight: (--fw-regular);
+  color: var(--clr-neutral-400);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--ff-heading);
+  color: var(--clr-neutral-900);
+}
+
+h1 {
+  font-size: var(--fs-900);
+  font-weight: var(--fw-semi-bold);
+}
+
+h2, h3, h4, h5, h6 {
+  font-size: var(--fs-700);
+}
+
+.layout-wrapper {
+  background-color: var(--clr-neutral-100);
+  width: 100%;
+  max-width: 40rem;
+}
+
+#navbar,
+#main-doc {
+  padding: 0 1.25em;
+}
+
+#navbar {
+  margin-bottom: 2.5em;
+}
+
+#navbar header {
+  min-height: 6.5em;
+  border-bottom: 0.5px solid var(--clr-neutral-400);
+}
+
+.javascript-logo {
+  background-color: var(--clr-primary-400);
+  color: var(--clr-neutral-400);
+  width: 2em;
+  aspect-ratio: 1/1;
+  padding-right: 0.25em;
+  transition: transform 200ms ease;
+}
+
+.javascript-logo:hover,
+.javascript-logo:focus {
+  transform: translateY(-5%);
+  box-shadow: 2px 3px 10px -5px var(--clr-neutral-400);
+}
+
+#navbar li {
+  border-bottom: 0.5px solid var(--clr-neutral-400);
+  padding: 1em 0;
+  transition: transform 200ms ease-in;
+}
+
+#navbar li:hover {
+  transform: scale(105%);
+  box-shadow: 0 3px 10px -5px var(--clr-neutral-400);
+}
+
+#navbar li a {
+  text-decoration: none;
+  padding-left: 0.75em;
+  color: var(--clr-neutral-900);
+}
+
+#navbar li:hover a,
+#navbar li a:hover {
+  color: var(--clr-neutral-400);
+}
+
+#navbar li:focus a,
+#navbar li a:focus {
+  outline: 1px dotted var(--clr-neutral-400);
+  outline-offset: 0.1em;
+}
+
+#main-doc {
+  padding-bottom: 1em;
+}
+
+.main-section {
+  margin-bottom: 2.5em;
+}
+
+.main-section header {
+  margin-bottom: 0.625em;
+}
+
+.main-section h2 {
+  padding-top: 1em;
+}
+
+.main-section article {
+  padding: 0 0.625em;
+}
+
+.main-section p {
+  margin-bottom: 1em;
+}
+
+.main-section code {
+  display: block;
+  font-family: var(--ff-secondary);
+  font-size: var(--fs-200);
+  line-height: 2;
+  letter-spacing: 0.1em;
+  word-break: normal;
+  white-space: pre-line;
+  overflow: scroll;
+  background-color: var(--clr-neutral-200);
+  padding: 0em 1.25em 1.8em;
+  border-radius: 5px;
+  margin: 0.625em 0;
+  transition: transform 200ms ease;
+}
+
+.main-section code:hover,
+.main-section code:focus {
+  transform: scale(105%);
+  border-bottom: 1px solid var(--clr-neutral-400);
+  box-shadow: 0 5px 10px -5px var(--clr-neutral-400);
+}
+
+.main-section ul {
+  padding-left: 2em;
+}
+
+.main-section li {
+  margin-bottom: 0.5em;
+}
+
+.main-section li li {
+  line-height: 1.4;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+/* UTILITY CLASSES */
+.flex { display: flex; }
+.inline-flex { display: inline-flex; }
+.justify-start { justify-content: start; }
+.justify-end { justify-content: end; }
+.justify-center { justify-content: center; }
+.justify-space-between { justify-content: space-between; }
+.justify-space-evenly { justify-content: space-evenly; }
+.justify-space-around { justify-content: space-around; }
+.align-start { align-items: start; }
+.align-end { align-items: end; }
+.align-center { align-items: center; }
+.align-self-start { align-self: start; }
+.align-self-end { align-self: end; }
+.align-self-center { align-self: center; }
+
+.inline-center { margin: 0 auto; }
+.box-center { margin: auto 0; }
+
+/* TABLETS & DESKTOP */
+@media (min-width: 56.25em) {
+  .layout-wrapper {
+    max-width: 80rem;
+  }
+  
+  #navbar {
+    width: 34%;
+    max-width: 30rem;
+    min-height: 100vh;
+    position: fixed;
+    border-right: 0.5px solid var(--clr-neutral-400);
+    top: 0;
+  }
+  
+  #main-doc {
+    width: 65%;
+    max-width: 50rem;
+    margin-left: auto;
+  }
+}
