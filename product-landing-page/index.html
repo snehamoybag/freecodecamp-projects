@@ -26,18 +26,18 @@
         </ul>
       </nav>
     </div>
-    <section class="header__text">
+    <section class="header__text-container">
       <h1 class="header__title">Meet Ara, the modular phone</h1>
       <p class="header__subtitle">
         Developer Edition Shipping Fall 2016
       </p>
-      <a href="#" class="btn btn__watch-video">Watch Video</a>
+      <a href="#" class="header__btn">Watch Video</a>
     </section>
     <section class="newsletter">
       <h2 class="newsletter__title"></h2>
-      <form action="" class="newsletter__form" id="form">
-        <input type="email" placeholder="Email Address" aria-label="Email Address" class="newsletter__input" id="email" required>
-        <button type="submit" class="btn btn__newsletter" id="submit"><span class="sr-only">Submit</span></button>
+      <form action="" class="form" id="form">
+        <input type="email" placeholder="Email Address" aria-label="Email Address" class="form__input" id="email" required>
+        <button type="submit" class="form__btn" id="submit"><span class="sr-only">Submit</span><i></i></button>
       </form>
       <p>
         Follow <a href="#">@ProjectAra</a>
@@ -57,25 +57,126 @@
           Ara modules fit neatly into the frame, allowing for upgrades, innovation and style.
         </p>
       </div>
-      <div class="about__features1">
+      <div class="even-columns">
         <img src="" alt="Ara Modules">
-        <div class="about__features-texts">
-          <h2>Mix.Match.Swap</h2>
+        <div class="texts-container">
+          <h3>Mix.Match.Swap</h2>
           <p>
             Slide any Ara module into any slot and it just works. Powering this simplicity is Greybus, a new bit of software deep in the Android stock. Greybus supports instantaneous connections, power efficiency and data-transfer rates of upto 11.9 Gbps.
           </p>
         </div>
       </div>
-      <div class="about__features2">
+      <div class="even-columns">
         <img src="" alt="Durability pf Ara">
-        <div class="about__features-texts">
-          <h2>Built to Last</h2>
+        <div class="texts-container">
+          <h3>Built to Last</h2>
           <p>
             The Ara frame is built with durable latches and connectors to keep modules secured. Ara modules are designed around standards, allowing them to new generations of frames and new form factors.
           </p>
         </div>
       </div>
     </section>
+    <section class="build-with-us" id="build-with-us">
+      <h2>Build With Us</h2>
+      <div class="even-columns">
+        <img src="" alt="Ara module slots">
+        <div class="texts-container">
+          <h3>More Space. New Ideas</h3>
+          <p>
+            The Ara frame contains the CPU, GPU, antennas, sensors, battery and display. Freeing up more room for hardware in each module. We're looking to module makers to create technology never before seen on smartphones.
+          </p>
+        </div>
+      </div>
+      <div class="even-columns">
+        <img src="" alt="Hardware's API of Ara">
+        <div class="texts-container">
+          <h3>Hardware's API</h3>
+          <p>
+            The Ara baseplate provides an instant connection to the Ara frame and its core technologies. That means less time fiddling and more time building.
+          </p>
+        </div>
+      </div>
+      <div class="even-columns">
+        <img src="" alt="Ara open marketplace">
+        <div class="texts-container">
+          <h3>Open Marketplace</h3>
+          <p>
+            We're hard at work on an open marketplace to connect the next generation of ideas with the broader Ara community. Google is looking for beloved brands and forward-thinking developers to join us.
+          </p>
+        </div>
+      </div>
+      <form class="signup-form" id="signup-form" action="get">
+        <h3>Build With Us</h3>
+        <p>
+          Please complete this form to express your interest in developing for Ara.
+        </p>
+        <div>
+          <label for="first-name">
+            First Name*
+            <input type="text" id="first-name" required>
+          </label>
+          <label for="last-name">
+            Last Name*
+            <input type="text" id="last-name" required>
+          </label>
+          <label for="signup-email">
+            Email*
+            <input type="email" id="signup-email" required>
+          </label>
+          <label for="phone">
+            Phone*
+            <input type="number" id="phone" required>
+          </label>
+          <label for="interest">
+            Your interest
+            <select name="dev-interest" id="interest" multiple>
+              <option value="" selected hidden></option>
+              <option value="interest-1">Interest 1</option>
+              <option value="interest-2">Interest 2</option>
+              <option value="interest-3">Interest 3</option>
+              <option value="interest-4">Interest 4</option>
+              <option value="interest-5">Interest 5</option>
+            </select>
+          </label>
+          <label for="module-category">
+            Module Category
+            <select name="module-category" id="module-category">
+              <option value="" selected hidden></option>
+              <option value="category-1">Category 1</option>
+              <option value="category-2">Category 2</option>
+              <option value="category-3">Category 3</option>
+              <option value="category-4">Category 4</option>
+              <option value="category-5">Category 5</option>
+            </select>
+          </label>
+          <label for="ole">
+            #OLE*
+            <select name="OLE" id="ole" required>
+              <option value="" selected hidden></option>
+              <option value="ole-yes">Yes</option>
+              <option value="ole-no">No</option>
+              <option value="ole-no-idea">What is OLE?</option>
+            </select>
+          </label>
+          <label for="about-project">
+            Tell us about your project
+            <textarea name="" id="about-project"></textarea>
+          </label>
+          <label for="terms">
+            <input type="checkbox" id="terms" name="terms" value="accepted"> I accepte the <a href="#">Terms and Conditions</a> and acknowledge that my information will be used in accordance with <a href="#">Google's Privacy Policy</a>*
+          </label>
+          <button type="submit">submit</button>
+        </div>
+      </form>
+    </section>
   </main>
+  <footer>
+    Google ATAP
+    <ul class="site-maps" aria-label="Useful Links">
+      <li><a href="#">Terms</a></li>
+      <li><a href="#">Privacy</a></li>
+      <li><a href="" aria-label="Follow Project ARA on Twitter"></a></li>
+    </ul>
+  </footer>
 </body>
 </html>
