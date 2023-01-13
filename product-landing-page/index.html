@@ -36,7 +36,7 @@
     <section class="newsletter">
       <h2 class="newsletter__title"></h2>
       <form action="" class="form" id="form">
-        <input type="email" placeholder="Email Address" aria-label="Email Address" class="form__input" id="email" required>
+        <input type="email" placeholder="Email Address" aria-label="Email Address" class="form__input" id="email" name="newsletter-email" required>
         <button type="submit" class="form__btn" id="submit"><span class="sr-only">Submit</span><i></i></button>
       </form>
       <p>
@@ -105,7 +105,7 @@
           </p>
         </div>
       </div>
-      <form class="signup-form" id="signup-form" action="get">
+      <form class="form" id="signup-form" action="get">
         <h3>Build With Us</h3>
         <p>
           Please complete this form to express your interest in developing for Ara.
@@ -113,19 +113,19 @@
         <div>
           <label for="first-name">
             First Name*
-            <input type="text" id="first-name" required>
+            <input type="text" id="first-name" name="first-name" required>
           </label>
           <label for="last-name">
             Last Name*
-            <input type="text" id="last-name" required>
+            <input type="text" id="last-name" name="last-name" required>
           </label>
           <label for="signup-email">
             Email*
-            <input type="email" id="signup-email" required>
+            <input type="email" id="signup-email" name="signup-email" required>
           </label>
           <label for="phone">
             Phone*
-            <input type="number" id="phone" required>
+            <input type="number" id="phone" name="phone" required>
           </label>
           <label for="interest">
             Your interest
@@ -165,7 +165,7 @@
           <label for="terms">
             <input type="checkbox" id="terms" name="terms" value="accepted"> I accepte the <a href="#">Terms and Conditions</a> and acknowledge that my information will be used in accordance with <a href="#">Google's Privacy Policy</a>*
           </label>
-          <button type="submit">submit</button>
+          <button type="submit" class="form__btn">submit</button>
         </div>
       </form>
     </section>
