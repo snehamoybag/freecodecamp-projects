@@ -12,25 +12,14 @@
   --clr-neutral-900: hsl(0, 0%, 5%);
 }
 
-/* Box sizing rules */
+/* size, margin, padding and typography reset */
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
-}
-
-/* Remove default margin */
-body,
-h1,
-h2,
-h3,
-h4,
-p,
-figure,
-blockquote,
-dl,
-dd {
+  padding: 0;
   margin: 0;
+  box-sizing: border-box;
+  font: inherit;
 }
 
 /* Set core root defaults */
@@ -58,14 +47,6 @@ video {
   max-width: 100%;
 }
 
-/* Inherit fonts for inputs and buttons */
-input,
-button,
-textarea,
-select {
-  font: inherit;
-}
-
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
 @media (prefers-reduced-motion: reduce) {
   html:focus-within {
@@ -85,19 +66,53 @@ select {
 /* mobile first styling */
 body {
   font-family: 'Poppins', sans-serif;
+  color: var(--clr-neutral-700);
+}
+
+.header__nav {
+  width: 100%;
+  height: 3.5rem;
+  padding-right: 1em;
+  position: fixed;
+  z-index: 1;
+  outline: 1px solid red;
+  text-transform: uppercase;
+}
+
+.header__nav a {
+  color: var(--clr-neutral-100);
+  text-decoration: none;
+}
+
+.header__nav-list {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+
+.header__logo-container {
+  width: 2rem;
+  transform: rotate(90deg);
+}
+
+.header__logo {
+  object-fit: contain;
+  /* chenges the black image to white */
+  filter: invert(100%);
 }
 
 .header__intro {
   position: relative;
-  aspect-ratio: 3/4;
+  height: 50vmax;
 }
 
 .header__video {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: top 0 left 40%;
-  outline: 1px solid;
+  outline: 1px solid lime;
   position: absolute;
   filter: brightness(75%) contrast(105%);
   z-index: -1;
@@ -110,16 +125,52 @@ body {
   color: var(--clr-neutral-100);
 }
 
-/* utility classes */
+/* flex utility classes */
+.flex {
+  display: flex;
+}
+
+.flex--space-between {
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* components styling */
+.btn--light,
+.btn--dark {
+  text-transform: uppercase;
+  background-color: unset;
+  border: 1.5px solid currentColor;
+}
+
+.btn--light {
+  color: var(--clr-primary-100);
+  padding: 0.5em 1.5em;
+}
+
+.btn--dark {
+  color: var(--clr-neutral-700);
+}
+
+.btn--no-border {
+  background-color: unset;
+  border: none;
+}
+
+/* background color utility classes */
 .bg--primary-400 {
   background-color: var(--clr-primary-400);
 }
+
 .bg--secondary-400 {
   background-color: var(--clr-secondary-400);
 }
+
 .bg--accent-400 {
   background-color: var(--clr-accent-400);
 }
+
 .bg--neutral-900 {
   background-color: var(--clr-neutral-900);
 }

@@ -13,22 +13,23 @@
 </head>
 <body>
   <header class="header" id="header">
-    <div class="header__nav-container">
-      <img src="https://images2.imgbox.com/ca/47/LhQwq4h9_o.png" alt="ARA" class="header__logo" id="header-img">
-      <nav class="header__nav" id="nav-bar">
-        <ul class="header__nav-list">
-          <li class="header__nav-list-item">
-            <a href="" class="header__nav-list-item-link nav-link"></a>
-          </li>
-          <li class="header__nav-list-item">
-            <a href="" class="header__nav-list-item-link nav-link"></a>
-          </li>
-          <li class="header__nav-list-item">
-            <a href="" class="header__nav-list-item-link nav-link"></a>
-          </li>
-        </ul>
-      </nav>
-    </div>
+    <nav class="header__nav | flex flex--space-between" id="nav-bar">
+      <a href="#header" class="header__logo-container">
+        <img src="https://images2.imgbox.com/ca/47/LhQwq4h9_o.png" alt="ARA" class="header__logo" id="header-logo">
+      </a>
+      <ul class="header__nav-list">
+        <li>
+          <a href="#about">About</a>
+        </li>
+        <li>
+          <a href="#features">Features</a>
+        </li>
+        <li>
+          <a href="#signup-form">Join Us</a>
+        </li>
+      </ul>
+    </nav>
+
     <section class="header__intro">
       <video class="header__video" width="250" height="200" poster="https://images2.imgbox.com/93/e1/oCWiRUvW_o.jpg">
         <source type="video/mp4" src="">
@@ -38,14 +39,15 @@
         <p class="header__subtitle">
           Developer Edition Shipping Fall 2016
         </p>
-        <button class="btn btn--light" id="header-btn">Watch Video</button>
+        <button class="btn--light" id="header-btn">Watch Video</button>
       </div>
     </section>
-    <section class="newsletter | bg--accent-400">
-      <h2 class="newsletter__title">Stay upto date with ARA</h2>
+    <section class="newsletter | flex flex--space-between bg--accent-400">
       <form action="" class="form" id="form">
-        <input type="email" placeholder="Email Address" aria-label="Email Address" class="form__input" id="email" name="newsletter-email" required>
-        <button type="submit" class="btn btn--transparent" id="submit"><span class="sr-only">Submit</span><i></i></button>
+        <label for="email">Stay upto date with ARA
+          <input type="email" placeholder="Email Address" class="form__input" id="email" name="newsletter-email" required>
+        </label>
+        <button type="submit" class="btn--no-border" id="submit"><span class="sr-only">Submit</span><i></i></button>
       </form>
       <p>
         Follow <a href="#">@ProjectAra</a>
@@ -84,7 +86,7 @@
         </div>
       </div>
     </section>
-    <section class="build-with-us" id="build-with-us">
+    <section class="features" id="features">
       <h2 class="bg--primary-400">Build With Us</h2>
       <div class="even-columns">
         <img src="" alt="Ara module slots">
@@ -173,7 +175,7 @@
           <label for="terms">
             <input type="checkbox" id="terms" name="terms" value="accepted"> I accepte the <a href="#">Terms and Conditions</a> and acknowledge that my information will be used in accordance with <a href="#">Google's Privacy Policy</a>*
           </label>
-          <button type="submit" class="btn btn--dark">submit</button>
+          <button type="submit" class="btn--dark">submit</button>
         </div>
       </form>
     </section>
