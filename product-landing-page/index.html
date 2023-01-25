@@ -45,11 +45,13 @@
       </div>
     </section>
     <section class="newsletter | flex flex--space-between bg--accent-400">
-      <form action="" class="form" id="form">
+      <form action="" class="newsletter__form form" id="form">
         <label for="email">Stay upto date with ARA
-          <input type="email" placeholder="Email Address" class="form__input" id="email" name="newsletter-email" required>
         </label>
-        <button type="submit" class="btn--no-border" id="submit"><span class="sr-only">Submit</span><i></i></button>
+        <div class="newsletter__input-btn-container">
+          <input type="email" placeholder="Email Address" class="newsletter__input form__input" id="email" name="newsletter-email" required>
+          <button type="submit" class="newsletter__btn | btn--no-border" id="submit"><span class="sr-only">Submit</span><i></i></button>
+        </div>
       </form>
       <p>
         Follow <a href="#">@ProjectAra</a>
@@ -60,7 +62,7 @@
   <main class="main">
     <section class="about" id="about">
       <img src="" alt="Ara in Ocean Blue colour">
-      <div class="">
+      <div class="about__intro">
         <h2 class="texts-container">Life and technology change quickly. So does Ara.</h2>
         <p class="texts-container bg--primary-400">
           The Ara frame contains all the functionality of a smartphone plus six flexible slots for easy swapping.
@@ -89,7 +91,7 @@
       </div>
     </section>
     <section class="features" id="features">
-      <h2 class="bg--primary-400">Build With Us</h2>
+      <h2 class="texts-container bg--primary-400">Build With Us</h2>
       <div class="even-columns">
         <img src="" alt="Ara module slots">
         <div class="texts-container">
@@ -182,12 +184,12 @@
       </form>
     </section>
   </main>
-  <footer class="bg--neutral-900">
-    Google ATAP
-    <ul class="site-maps" aria-label="Useful Links">
+  <footer class="footer | flex flex--space-between bg--neutral-900">
+    <h2>Google ATAP</h2>
+    <ul class="footer__site-maps" aria-label="Useful Links">
       <li><a href="#">Terms</a></li>
       <li><a href="#">Privacy</a></li>
-      <li><a href="" aria-label="Follow Project ARA on Twitter"></a></li>
+      <li><a href="" aria-label="Follow Project ARA on Twitter">TD</a></li>
     </ul>
   </footer>
 </body>

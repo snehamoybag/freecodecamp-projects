@@ -13,8 +13,11 @@
   --clr-neutral-900: hsl(0, 0%, 5%);
 
   /* typography */
+  --fs-300: 0.75rem;
   --fs-400: 0.875rem;
   --fs-500: 1.25rem;
+  --fs-600: 1.5rem;
+  --fs-700: 1.75rem;
   --fs-900: 2rem;
 
   --fw-regular: 400;
@@ -37,6 +40,7 @@
 }
 
 /* Set core root defaults */
+html,
 html:focus-within {
   scroll-behavior: smooth;
 }
@@ -45,7 +49,7 @@ html:focus-within {
 body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
-  line-height: 1.5;
+  line-height: 1.6;
 }
 
 /* A elements that don't have a class get default styles */
@@ -154,11 +158,46 @@ body {
   margin-bottom: 2.5rem;
 }
 
+.main h2,
+.main h3 {
+  color: var(--clr-neutral-900);
+}
+
+.main h2 {
+  font-size: var(--fs-600);
+  font-weight: var(--fw-semi-bold);
+  line-height: 1.4;
+}
+
+.main h3 {
+  font-size: var(--fs-500);
+  font-weight: var(--fw-semi-bold);
+}
+
+.features h2 {
+  font-weight: var(--fw-bold);
+  text-align: center;
+}
+
+.about__intro p {
+  font-size: 110%;
+  line-height: 2;
+}
+
+.texts-container {
+  padding: 4em var(--content-inline-padding);
+}
+
+.texts-container h3 {
+  margin-bottom: 3rem;
+}
+
 .newsletter {
   padding: 2em var(--content-inline-padding);
   text-transform: uppercase;
   font-weight: var(--fw-medium);
   color: var(--clr-neutral-900);
+  gap: 2em;
 }
 
 .newsletter a {
@@ -166,21 +205,80 @@ body {
   text-decoration: none;
 }
 
+@media (max-width: 45em) {
+  .newsletter__form {
+    flex-basis: 100%;
+  }
+}
+
+.newsletter__input-btn-container {
+  position: relative;
+}
+
+.newsletter__btn {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.newsletter__input:focus-within + .newsletter__btn {
+  display: none;
+}
+
 .signup-form {
   padding: 4.5em var(--content-inline-padding);
+}
+
+.signup-form h3 {
+  margin-bottom: 1rem;
+}
+
+.signup-form p {
+  margin-bottom: 5rem;
+}
+
+.signup-form label {
+  display: block;
+  margin-bottom: 3rem;
+}
+
+.footer {
+  padding: 2em var(--content-inline-padding);
+  color: var(--clr-neutral-100);
   font-weight: var(--fw-medium);
 }
 
-/* components styling */
-.form label,
-.form input,
-.form select {
-  color: var(--clr-neutral-900);
+.footer a {
+  color: inherit;
+  text-decoration: none;
   text-transform: uppercase;
 }
 
-.form label[for="terms"] {
+.footer__site-maps {
+  list-style: none;
+  font-size: var(--fs-300);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+
+/* components styling */
+.form {
+  --input-top-padding: 2em;
+}
+
+.form label,
+.form select,
+.form input::placeholder {
+  color: var(--clr-neutral-900);
+  text-transform: uppercase;
+  font-weight: var(--fw-medium);
+}
+
+.form label[for="terms"],
+.form input {
   text-transform: unset;
+  font-weight: var(--fw-regular);
 }
 
 .form textarea,
@@ -194,14 +292,9 @@ body {
   display: block;
   width: 100%;
   background-color: transparent;
-  padding-top: 1em;
+  padding-top: var(--input-top-padding);
   border: none;
   border-bottom: 1px solid var(--clr-neutral-700);
-}
-
-.form input::placeholder,
-.form textarea::placeholder {
-  color: inherit;
 }
 
 .form input:focus,
@@ -217,11 +310,12 @@ body {
 .form textarea:focus-within {
   border: none;
   outline: 1px solid var(--clr-neutral-700);
-  padding: 0.5em 1em;
+  padding: calc(var(--input-top-padding)/2) 1em;
 }
 
 .form input[type="checkbox"] {
   display: inline-block;
+  position: relative;
   appearance: none;
   width: 1em;
   aspect-ratio: 1/1;
@@ -229,7 +323,7 @@ body {
   color: var(--clr-neutral-700);
   padding: unset;
   border: 2px solid currentColor;
-  position: relative;
+  margin-right: 0.85em;
 }
 
 .form input[type="checkbox"]:focus-within {
@@ -253,12 +347,14 @@ body {
 .btn--dark {
   text-transform: uppercase;
   background-color: unset;
+  padding: 0.5em 1.5em;
   border: 1.5px solid currentColor;
+  font-weight: var(--fw-medium);
 }
 
 .btn--light {
   color: var(--clr-primary-100);
-  padding: 0.5em 1.5em;
+
 }
 
 .btn--dark {
@@ -271,10 +367,6 @@ body {
 }
 
 /* layout utility classes */
-.texts-container {
-  padding: 4em var(--content-inline-padding);
-}
-
 .flex {
   display: flex;
 }
