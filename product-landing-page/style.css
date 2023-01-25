@@ -18,6 +18,7 @@
   --fs-900: 2rem;
 
   --fw-regular: 400;
+  --fw-medium: 500;
   --fw-semi-bold: 600;
   --fw-bold: 700;
 
@@ -156,11 +157,18 @@ body {
 .newsletter {
   padding: 2em var(--content-inline-padding);
   text-transform: uppercase;
+  font-weight: var(--fw-medium);
   color: var(--clr-neutral-900);
+}
+
+.newsletter a {
+  color: inherit;
+  text-decoration: none;
 }
 
 .signup-form {
   padding: 4.5em var(--content-inline-padding);
+  font-weight: var(--fw-medium);
 }
 
 /* components styling */
