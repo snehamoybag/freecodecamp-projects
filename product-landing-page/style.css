@@ -205,7 +205,7 @@ body {
   text-decoration: none;
 }
 
-@media (max-width: 45em) {
+@media (max-width: 44.96em) {
   .newsletter__form {
     flex-basis: 100%;
   }
@@ -375,6 +375,24 @@ body {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+}
+
+@media (min-width: 45em) {
+  .grid {
+    display: grid;
+  }
+
+  .grid--double-column {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .grid--triple-column {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .column-span-2 {
+    span: 1/-1;
+  }
 }
 
 /* background color utility classes */

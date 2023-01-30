@@ -10,6 +10,8 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- Fontawesome icons -->
+  <script src="https://kit.fontawesome.com/9d44445160.js" crossorigin="anonymous"></script>
   <!-- Css stylesheet -->
   <link rel="stylesheet" href="style.css">
 </head>
@@ -41,7 +43,7 @@
         <p class="header__subtitle">
           Developer Edition Shipping Fall 2016
         </p>
-        <button class="btn--light" id="header-btn">Watch Video</button>
+        <button class="btn--light" id="header-btn"><i class="fa-solid fa-play"></i> Watch Video</button>
       </div>
     </section>
     <section class="newsletter | flex flex--space-between bg--accent-400">
@@ -50,19 +52,19 @@
         </label>
         <div class="newsletter__input-btn-container">
           <input type="email" placeholder="Email Address" class="newsletter__input form__input" id="email" name="newsletter-email" required>
-          <button type="submit" class="newsletter__btn | btn--no-border" id="submit"><span class="sr-only">Submit</span><i></i></button>
+          <button type="submit" class="newsletter__btn | btn--no-border" id="submit"><span class="sr-only">Submit</span><i class="fa-solid fa-arrow-right"></i></button>
         </div>
       </form>
       <p>
-        Follow <a href="#">@ProjectAra</a>
+        <i class="fa-brands fa-twitter"></i> Follow <a href="#">@ProjectAra</a>
       </p>
     </section>
   </header>
 
   <main class="main">
-    <section class="about" id="about">
-      <img src="" alt="Ara in Ocean Blue colour">
-      <div class="about__intro">
+    <section class="about | grid grid--double-column" id="about">
+      <img src="https://images2.imgbox.com/f4/8b/quJm6FbP_o.jpg" alt="Ara in Ocean Blue colour">
+      <div class="about__intro grid grid--double-column">
         <h2 class="texts-container">Life and technology change quickly. So does Ara.</h2>
         <p class="texts-container bg--primary-400">
           The Ara frame contains all the functionality of a smartphone plus six flexible slots for easy swapping.
@@ -71,8 +73,8 @@
           Ara modules fit neatly into the frame, allowing for upgrades, innovation and style.
         </p>
       </div>
-      <div class="even-columns">
-        <img src="" alt="Ara Modules">
+      <div class="grid grid--double-column">
+        <img src="https://images2.imgbox.com/e1/88/mM9ii7Pm_o.jpg" alt="Ara Modules">
         <div class="texts-container">
           <h3>Mix.Match.Swap</h2>
           <p>
@@ -80,8 +82,8 @@
           </p>
         </div>
       </div>
-      <div class="even-columns">
-        <img src="" alt="Durability pf Ara">
+      <div class="grid grid--double-column">
+        <img src="https://images2.imgbox.com/f0/ac/G2WSDkYE_o.jpg" alt="Durability pf Ara">
         <div class="texts-container">
           <h3>Built to Last</h2>
           <p>
@@ -92,8 +94,8 @@
     </section>
     <section class="features" id="features">
       <h2 class="texts-container bg--primary-400">Build With Us</h2>
-      <div class="even-columns">
-        <img src="" alt="Ara module slots">
+      <div class="grid grid--double-column">
+        <img src="https://images2.imgbox.com/25/ee/Pn2yQ08h_o.jpg" alt="Ara module slots">
         <div class="texts-container">
           <h3>More Space. New Ideas</h3>
           <p>
@@ -101,8 +103,8 @@
           </p>
         </div>
       </div>
-      <div class="even-columns">
-        <img class="bg--secondary-400" src="" alt="Hardware's API of Ara">
+      <div class="grid grid--double-column">
+        <img class="bg--secondary-400" src="https://images2.imgbox.com/cb/82/VmRXhQpg_o.jpg" alt="Hardware's API of Ara">
         <div class="texts-container">
           <h3>Hardware's API</h3>
           <p>
@@ -110,8 +112,8 @@
           </p>
         </div>
       </div>
-      <div class="even-columns">
-        <img src="" alt="Ara open marketplace">
+      <div class="grid grid--double-column">
+        <img src="https://images2.imgbox.com/c3/70/B7Z3Mxap_o.jpg" alt="Ara open marketplace">
         <div class="texts-container">
           <h3>Open Marketplace</h3>
           <p>
@@ -124,7 +126,7 @@
         <p>
           Please complete this form to express your interest in developing for Ara.
         </p>
-        <div>
+        <div class="grid grid--triple-column">
           <label for="first-name">
             First Name*
             <input type="text" id="first-name" name="first-name" required>
@@ -179,7 +181,7 @@
           <label for="terms">
             <input type="checkbox" id="terms" name="terms" value="accepted"> I accept the <a href="#">Terms and Conditions</a> and acknowledge that my information will be used in accordance with <a href="#">Google's Privacy Policy</a>*
           </label>
-          <button type="submit" class="btn--dark">submit</button>
+          <button type="submit" class="btn--dark">submit <i class="fa-solid fa-arrow-right"></i></button>
         </div>
       </form>
     </section>
@@ -189,7 +191,7 @@
     <ul class="footer__site-maps" aria-label="Useful Links">
       <li><a href="#">Terms</a></li>
       <li><a href="#">Privacy</a></li>
-      <li><a href="" aria-label="Follow Project ARA on Twitter">TD</a></li>
+      <li><a href="" aria-label="Follow Project ARA on Twitter"><i class="fa-brands fa-twitter"></i></a></li>
     </ul>
   </footer>
 </body>
