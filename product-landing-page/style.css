@@ -158,6 +158,11 @@ body {
   margin-bottom: 2.5rem;
 }
 
+.header .fa-play,
+.header .fa-twitter {
+  margin-right: 0.5em;
+}
+
 .main h2,
 .main h3 {
   color: var(--clr-neutral-900);
@@ -182,6 +187,14 @@ body {
 .about__intro p {
   font-size: 110%;
   line-height: 2;
+}
+
+.fa-grip-vertical,
+.fa-mobile {
+  display: block;
+  font-size: 250%;
+  margin-bottom: 1rem;
+  opacity: 0.5;
 }
 
 .texts-container {
@@ -242,6 +255,10 @@ body {
   margin-bottom: 3rem;
 }
 
+.signup-form .fa-arrow-right {
+  margin-left: 0.5em;
+}
+
 .footer {
   padding: 2em var(--content-inline-padding);
   color: var(--clr-neutral-100);
@@ -260,6 +277,16 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 1em;
+}
+
+.footer .fa-star-half-stroke {
+  margin-right: 0.3em;
+  font-size: 75%;
+}
+
+/* Desktop layout */
+@media (min-width: 45em) {
+  .about {}
 }
 
 /* components styling */
