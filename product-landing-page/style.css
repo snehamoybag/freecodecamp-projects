@@ -287,6 +287,29 @@ body {
 /* Desktop layout */
 @media (min-width: 45em) {
   .about {}
+
+  .signup-form .grid {
+    grid-column-gap: 4rem;
+    grid-row-gap: 1rem;
+  }
+
+  .signup-form label[for="interest"] {
+    grid-column: 1/ span 2;
+    grid-row: 2/2
+  }
+
+  .signup-form label[for="module-category"] {
+    grid-column: span 2;
+  }
+
+  .signup-form label[for="about-project"],
+  .signup-form label[for="terms"] {
+    grid-column: span 3;
+  }
+
+  .signup-form button[type="submit"] {
+    justify-self: start;
+  }
 }
 
 /* components styling */
@@ -345,7 +368,7 @@ body {
   position: relative;
   appearance: none;
   width: 1em;
-  aspect-ratio: 1/1;
+  height: 1em;
   vertical-align: center;
   color: var(--clr-neutral-700);
   padding: unset;
@@ -415,10 +438,6 @@ body {
 
   .grid--triple-column {
     grid-template-columns: repeat(3, 1fr);
-  }
-
-  .column-span-2 {
-    span: 1/-1;
   }
 }
 
