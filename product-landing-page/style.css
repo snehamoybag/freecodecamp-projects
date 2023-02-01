@@ -284,37 +284,9 @@ body {
   font-size: 75%;
 }
 
-/* Desktop layout */
-@media (min-width: 45em) {
-  .about {}
-
-  .signup-form .grid {
-    grid-column-gap: 4rem;
-    grid-row-gap: 1rem;
-  }
-
-  .signup-form label[for="interest"] {
-    grid-column: 1/ span 2;
-    grid-row: 2/2
-  }
-
-  .signup-form label[for="module-category"] {
-    grid-column: span 2;
-  }
-
-  .signup-form label[for="about-project"],
-  .signup-form label[for="terms"] {
-    grid-column: span 3;
-  }
-
-  .signup-form button[type="submit"] {
-    justify-self: start;
-  }
-}
-
 /* components styling */
 .form {
-  --input-top-padding: 2em;
+  --input-label-spacing: 2em;
 }
 
 .form label,
@@ -342,7 +314,6 @@ body {
   display: block;
   width: 100%;
   background-color: transparent;
-  padding-top: var(--input-top-padding);
   border: none;
   border-bottom: 1px solid var(--clr-neutral-700);
 }
@@ -356,11 +327,19 @@ body {
   outline: none;
 }
 
+.form input,
+.form textarea,
+.form select {
+  margin-top: var(--input-label-spacing);
+}
+
 .form input:focus-within,
-.form textarea:focus-within {
+.form textarea:focus-within,
+.form select:focus-within {
   border: none;
   outline: 1px solid var(--clr-neutral-700);
-  padding: calc(var(--input-top-padding)/2) 1em;
+  padding: calc(var(--input-label-spacing)/2) 1em;
+  margin-top: unset;
 }
 
 .form input[type="checkbox"] {
@@ -374,6 +353,7 @@ body {
   padding: unset;
   border: 2px solid currentColor;
   margin-right: 0.85em;
+  margin-top: unset;
 }
 
 .form input[type="checkbox"]:focus-within {
@@ -414,6 +394,83 @@ body {
 .btn--no-border {
   background-color: transparent;
   border: none;
+}
+
+/* Desktop layout */
+@media (min-width: 45em) {
+  .newsletter__form {
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+  }
+
+  .newsletter__form input {
+    margin-top: unset;
+  }
+
+  .main img {
+    align-self: stretch;
+    justify-self: stretch;
+    object-fit: cover;
+  }
+
+  /* .about > * {
+    outline: 1px solid red;
+  } */
+  .about > img {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+
+  .about__intro {
+    grid-column: 1/2;
+    grid-row: 1/2;
+  }
+
+  .about__intro h2 {
+    grid-column: span 2;
+  }
+
+  .about__more-info {
+    grid-column: span 2;
+  }
+
+  /* selecting the type of element (div) not the nth numbered class */
+  .about__more-info:nth-of-type(3) > img,
+  .features .grid:first-of-type > img,
+  .features .grid:last-of-type > img {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+
+  .about__more-info > img,
+  .features img {
+    aspect-ratio: 3/2;
+    object-position: top center;
+  }
+
+  .signup-form .grid {
+    grid-column-gap: 4rem;
+    grid-row-gap: 1rem;
+  }
+
+  .signup-form label[for="interest"] {
+    grid-column: 1/ span 2;
+    grid-row: 2/2
+  }
+
+  .signup-form label[for="module-category"] {
+    grid-column: span 2;
+  }
+
+  .signup-form label[for="about-project"],
+  .signup-form label[for="terms"] {
+    grid-column: span 3;
+  }
+
+  .signup-form button[type="submit"] {
+    justify-self: start;
+  }
 }
 
 /* layout utility classes */
