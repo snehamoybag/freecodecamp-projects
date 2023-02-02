@@ -375,8 +375,7 @@ body {
   font-size: 80%;
 }
 
-.btn:hover,
-.btn:focus {
+.btn:active {
   transform: scale(0.95);
 }
 
