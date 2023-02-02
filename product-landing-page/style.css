@@ -375,6 +375,11 @@ body {
   font-size: 80%;
 }
 
+.btn:hover,
+.btn:focus {
+  transform: scale(0.95);
+}
+
 .btn--light,
 .btn--dark {
   text-transform: uppercase;
