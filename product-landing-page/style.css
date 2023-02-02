@@ -123,7 +123,8 @@ body {
 
 .header__intro {
   position: relative;
-  height: 60vmax;
+  height: 100vh;
+  height: 100dvh;
 }
 
 .header__video {
@@ -159,6 +160,7 @@ body {
 }
 
 .header .fa-play,
+.header .fa-pause,
 .header .fa-twitter {
   margin-right: 0.5em;
 }
