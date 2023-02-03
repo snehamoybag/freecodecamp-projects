@@ -17,8 +17,13 @@
   --fs-400: 0.875rem;
   --fs-500: 1.25rem;
   --fs-600: 1.5rem;
-  --fs-700: 1.75rem;
   --fs-900: 2rem;
+
+  --fs-300: clamp(0.5rem, 3.5vw, 1.5rem);
+  --fs-400: clamp(0.625rem, 4vw, 1.85rem);
+  --fs-500: clamp(1rem, 5.75vw, 2.75rem);
+  --fs-600: clamp(1.25rem, 6.75vw, 3.25rem);
+  --fs-900: clamp(1.5rem, 9vw, 4.5rem);
 
   --fw-regular: 400;
   --fw-medium: 500;
@@ -49,7 +54,7 @@ html:focus-within {
 body {
   min-height: 100vh;
   text-rendering: optimizeSpeed;
-  line-height: 1.6;
+  line-height: 1.7;
 }
 
 /* A elements that don't have a class get default styles */
@@ -62,7 +67,7 @@ img,
 picture,
 video {
   display: block;
-  max-width: 100%;
+  width: 100%;
 }
 
 /* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
@@ -111,7 +116,7 @@ body {
 }
 
 .header__logo-container {
-  width: 2rem;
+  width: clamp(1.5rem, 10vw, 4rem);
   transform: rotate(90deg);
 }
 
@@ -191,6 +196,13 @@ body {
   line-height: 2;
 }
 
+.about > img,
+.about__more-info > img,
+.features img {
+  object-fit: cover;
+  object-position: top center;
+}
+
 .fa-grip-vertical,
 .fa-mobile {
   display: block;
@@ -220,7 +232,7 @@ body {
   text-decoration: none;
 }
 
-@media (max-width: 44.96em) {
+@media (max-width: 89.96em) {
   .newsletter__form {
     flex-basis: 100%;
   }
@@ -402,8 +414,10 @@ body {
   border: none;
 }
 
+/* Tablet layout */
+
 /* Desktop layout */
-@media (min-width: 45em) {
+@media (min-width: 90em) {
   .newsletter__form {
     display: flex;
     align-items: center;
@@ -417,7 +431,6 @@ body {
   .main img {
     align-self: stretch;
     justify-self: stretch;
-    object-fit: cover;
   }
 
   /* .about > * {
@@ -490,7 +503,7 @@ body {
   flex-wrap: wrap;
 }
 
-@media (min-width: 45em) {
+@media (min-width: 90em) {
   .grid {
     display: grid;
   }
