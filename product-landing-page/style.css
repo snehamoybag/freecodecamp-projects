@@ -48,6 +48,7 @@
 html,
 html:focus-within {
   scroll-behavior: smooth;
+  scroll-padding: 4.25rem;
 }
 
 /* Set core body defaults */
@@ -94,12 +95,19 @@ body {
   color: var(--clr-neutral-700);
 }
 
+body a:hover,
+body a:focus-within {
+  color: var(--clr-secondary-400);
+  font-weight: var(--fw-semi-bold);
+}
+
 .header__nav {
   width: 100%;
   padding: 1.5em 0.75em 1.5em 0;
   position: fixed;
   z-index: 1;
   text-transform: uppercase;
+  transition: box-shadow 400ms ease-in;
 }
 
 .header__nav a {
@@ -113,6 +121,10 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 1em;
+}
+
+.nav-bg-onscroll {
+  box-shadow: 60vw 0 1000px 10px var(--clr-neutral-900) inset;
 }
 
 .header__logo-container {
