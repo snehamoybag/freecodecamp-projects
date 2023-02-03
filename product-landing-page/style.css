@@ -116,7 +116,7 @@ body {
 }
 
 .header__logo-container {
-  width: clamp(1.5rem, 10vw, 4rem);
+  width: clamp(1.5rem, 10vw, 5rem);
   transform: rotate(90deg);
 }
 
@@ -192,7 +192,7 @@ body {
 }
 
 .about__intro p {
-  font-size: 110%;
+  font-size: min(110%, 1.85rem);
   line-height: 2;
 }
 
@@ -414,7 +414,16 @@ body {
   border: none;
 }
 
-/* Tablet layout */
+/* small desktop layout */
+@media (min-width: 64em) {
+:root {
+  --content-inline-padding: 4em;
+}
+
+  .header__nav {
+    padding: 2em 2.75em 2em 2em;
+  }
+}
 
 /* Desktop layout */
 @media (min-width: 90em) {
@@ -433,9 +442,6 @@ body {
     justify-self: stretch;
   }
 
-  /* .about > * {
-    outline: 1px solid red;
-  } */
   .about > img {
     grid-column: 2/3;
     grid-row: 1/2;
@@ -448,6 +454,10 @@ body {
 
   .about__intro h2 {
     grid-column: span 2;
+  }
+
+  .about__intro p {
+    --content-inline-padding: 2em;
   }
 
   .about__more-info {
