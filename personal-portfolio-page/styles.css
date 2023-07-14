@@ -48,10 +48,6 @@ body {
   position: relative;
 }
 
-a:hover {
-  color: var(--clr-accent-400);
-}
-
 h1,
 h2 {
   font-family: var(--ff-title);
@@ -61,6 +57,10 @@ h2 {
 img,
 svg {
   max-width: 100%;
+}
+
+a:hover {
+  color: var(--clr-accent-400);
 }
 
 .header {
@@ -123,31 +123,13 @@ svg {
 
 .welcome__paragraph {
   margin-top: 1.5rem;
-}
-
-.welcome__social-links {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 0.5em;
-  font-size: 1.5rem;
-  margin-top: 1.5rem;
-}
-
-.welcome__social-links > a {
-  color: var(--clr-primary-700);
-  transition: all 150ms ease;
-  display: flex; /* prevents a tag from streching in height */
-}
-
-.welcome__social-links > a:hover {
-  color: var(--clr-accent-400);
-  transform: scale(1.2);
+  margin-bottom: 1.5rem;
 }
 
 .skills__icons {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
   align-items: cneter;
   gap: 2.25em;
   padding: 0 var(--content-side-padding);
@@ -245,6 +227,80 @@ svg {
   border-color: inherit;
 }
 
+.about {
+  margin-top: 2.5em;
+}
+
+.about .section-title {
+  color: var(--clr-primary-100);
+}
+
+.about__wrapper {
+  padding: 0 var(--content-side-padding);
+}
+
+.about__img-wrapper {
+  text-align: center;
+}
+
+.about__img {
+  width: 55%;
+  border: 5px solid var(--clr-primary-900);
+  border-radius: 50%;
+}
+
+.about__img-wrapper .social-links {
+  margin-top: 0.75rem;
+}
+
+.about__resume-download {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+  width: fit-content;
+  font-weight: var(--fw-semi-bold);
+  text-decoration: none;
+  padding: 0.5em 1.5em;
+  border: 2px solid var(--clr-primary-100);
+  margin: 0.75rem auto 0 auto;
+}
+
+.about__resume-download:hover {
+  border-color: inherit;
+  font-weight: var(--fw-bold);
+}
+
+.about__resume-download:active {
+  transform: scale(0.95);
+}
+
+.about__txt-wrapper {
+  display: grid;
+  grid-row-gap: 1em;
+  margin-top: 2rem;
+}
+
+/* components */
+.social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5em;
+  font-size: 1.5rem;
+}
+
+.social-links a {
+  color: var(--clr-primary-700);
+  transition: all 150ms ease;
+  display: flex; /* prevents a tag from streching in height */
+}
+
+.social-links a:hover {
+  transform: scale(1.2);
+  color: var(--clr-accent-400);
+}
+
 /* utility classes */
 .section-padding {
   padding: 2.5em 0;
@@ -255,8 +311,16 @@ svg {
 }
 
 .bg--dark,
-.bg--dark * {
+.bg--dark a {
   color: var(--clr-primary-100);
+}
+
+.bg--dark a:hover {
+  color: var(--clr-accent-400);
+}
+
+.bg--dark_texture {
+  background-image: url("images/texture_nami.png");
 }
 
 .horizontal-line--dotted {
@@ -270,7 +334,8 @@ svg {
   border-color: var(--clr-primary-100);
 }
 
-.txt--bold {
+.txt--bold,
+strong {
   font-weight: var(--fw-bold);
 }
 
@@ -286,4 +351,8 @@ svg {
   bottom: 5%;
   left: 50%;
   transform: translateX(-50%);
+}
+
+.txt--clr-accent {
+  color: var(--clr-accent-400);
 }
