@@ -4,6 +4,10 @@
 <head>
   <title>Portfolio of Snehamoy Bag</title>
   <meta charset="UTF-8" />
+  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png" />
+  <link rel="manifest" href="images/site.webmanifest" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link href="styles.css" rel="stylesheet" />
   <!-- google fonts -->
@@ -16,7 +20,7 @@
 </head>
 
 <body>
-  <header class="header | bg--dark">
+  <header class="header | container bg--dark">
     <a href="#">
       <h2 class="header__logo">SB.</h2>
     </a>
@@ -28,7 +32,7 @@
       <a href="#connect" class="txt--bold">Connect</a>
     </nav>
   </header>
-  <main>
+  <main class="main | container">
     <section class="welcome" id="welcome-section">
       <h1 class="welcome__title">Front-end Web Developer</h1>
       <p class="welcome__paragraph">
@@ -165,71 +169,73 @@
         </div>
       </div>
     </section>
-    <section class="about | bg--dark bg--dark_texture section-padding" id="about">
-      <h2 class="section-title">About</h2>
-      <div class="about__wrapper">
-        <div class="about__img-wrapper">
-          <img src="images/my-prof-pic.jpg" alt="picture of snehamoy bag" class="about__img" />
-          <div class="social-links">
-            <a href="https://github.com/snehamoybag" target="_blank" aria-label="github"><i
-                class="fa-brands fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/snehamoy-bag-a83509238/" target="_blank" aria-label="linkedin"><i
-                class="fa-brands fa-linkedin"></i></a>
+    <div class="even-columns">
+      <section class="about | bg--dark bg--dark_texture section-padding" id="about">
+        <h2 class="section-title">About</h2>
+        <div class="about__wrapper">
+          <div class="about__img-wrapper">
+            <img src="images/my-prof-pic.jpg" alt="picture of snehamoy bag" class="about__img" />
+            <div class="social-links">
+              <a href="https://github.com/snehamoybag" target="_blank" aria-label="github"><i
+                  class="fa-brands fa-github"></i></a>
+              <a href="https://www.linkedin.com/in/snehamoy-bag-a83509238/" target="_blank" aria-label="linkedin"><i
+                  class="fa-brands fa-linkedin"></i></a>
+              <a href="/" aria-label="download resume" download><i class="fa-regular fa-file"></i></a>
+            </div>
           </div>
-          <a href="/" class="about__resume-download" download="true"><i class="fa-regular fa-file"></i>
-            <span>Download Resume</span></a>
+          <div class="about__txt-wrapper">
+            <p>
+              Hi, I'm
+              <span class="txt--bold txt--dotted-underline">Snehamoy Bag</span>, a frontend web developer specializing
+              in accessibility and
+              user experience. I'm dedicated to creating inclusive digital
+              solutions that are visually appealing, functional, and
+              accessible to all users.
+            </p>
+            <p>
+              My passion for web development started as a personal pursuit and
+              has grown into a deep-rooted commitment. I continuously expand
+              my knowledge and stay updated with industry trends to deliver
+              modern websites that prioritize usability and smooth
+              interactions.
+            </p>
+            <p>
+              I believe in the power of technology to empower and include
+              everyone. Using my skills in
+              <strong class="txt--clr-accent">HTML</strong>,
+              <strong class="txt--clr-accent">CSS</strong>,
+              <strong class="txt--clr-accent">Javascript</strong>, and
+              <strong class="txt--clr-accent">React</strong>, I strive to
+              build seamless user experiences that make a lasting impact.
+            </p>
+            <p>
+              Let's collaborate to bring your web vision to life while making
+              a positive difference in the digital landscape.
+            </p>
+          </div>
         </div>
-        <div class="about__txt-wrapper">
-          <p>
-            Hi, I'm
-            <span class="txt--bold txt--dotted-underline">Snehamoy Bag</span>,
-            a frontend web developer specializing in accessibility and user
-            experience. I'm dedicated to creating inclusive digital solutions
-            that are visually appealing, functional, and accessible to all
-            users.
-          </p>
-          <p>
-            My passion for web development started as a personal pursuit and
-            has grown into a deep-rooted commitment. I continuously expand my
-            knowledge and stay updated with industry trends to deliver modern
-            websites that prioritize usability and smooth interactions.
-          </p>
-          <p>
-            I believe in the power of technology to empower and include
-            everyone. Using my skills in
-            <strong class="txt--clr-accent">HTML</strong>,
-            <strong class="txt--clr-accent">CSS</strong>,
-            <strong class="txt--clr-accent">Javascript</strong>, and
-            <strong class="txt--clr-accent">React</strong>, I strive to build
-            seamless user experiences that make a lasting impact.
-          </p>
-          <p>
-            Let's collaborate to bring your web vision to life while making a
-            positive difference in the digital landscape.
-          </p>
-        </div>
-      </div>
-    </section>
-    <section class="contact | section-padding">
-      <h2 class="section-title">Let's Connect</h2>
-      <form action="post" class="contact__form">
-        <label for="f-name">
-          Your Name :
-          <input type="text" id="f-name" name="name" placeholder="John Doe" required />
-        </label>
-        <label for="f-email">
-          Email Address :
-          <input type="email" id="f-email" name="email" placeholder="john@gmail.com" required />
-        </label>
-        <label for="f-message">
-          Message :
-          <textarea name="message" id="f-message" placeholder="Say hi..." rows="5" required></textarea>
-        </label>
-        <button>
-          <i class="fa-regular fa-paper-plane"></i> <span>Send</span>
-        </button>
-      </form>
-    </section>
+      </section>
+      <section id="connect" class="contact | section-padding">
+        <h2 class="section-title">Let's Connect</h2>
+        <form action="post" class="contact__form">
+          <label for="f-name">
+            Your Name :
+            <input type="text" id="f-name" name="name" placeholder="John Doe" required />
+          </label>
+          <label for="f-email">
+            Email Address :
+            <input type="email" id="f-email" name="email" placeholder="john@gmail.com" required />
+          </label>
+          <label for="f-message">
+            Message :
+            <textarea name="message" id="f-message" placeholder="Say hi..." rows="5" required></textarea>
+          </label>
+          <button>
+            <i class="fa-regular fa-paper-plane"></i> <span>Send</span>
+          </button>
+        </form>
+      </section>
+    </div>
   </main>
   <footer class="footer | bg--dark section-padding">
     <div class="social-links">
