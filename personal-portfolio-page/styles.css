@@ -165,6 +165,10 @@ a:hover {
   --thumbnail-height: 160px;
 }
 
+.project em {
+  font-weight: var(--fw-semi-bold);
+}
+
 .projects__wrapper {
   --gap: 1.75em;
   padding: 0 var(--content-side-padding);

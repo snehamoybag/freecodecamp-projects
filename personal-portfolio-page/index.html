@@ -1,253 +1,425 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <title>Portfolio of Snehamoy Bag</title>
+    <meta charset="UTF-8" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="images/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/favicon-16x16.png"
+    />
+    <link rel="manifest" href="images/site.webmanifest" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="styles.css" rel="stylesheet" />
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Russo+One&family=Titillium+Web:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- font awesome -->
+    <script
+      src="https://kit.fontawesome.com/9d44445160.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
 
-<head>
-  <title>Portfolio of Snehamoy Bag</title>
-  <meta charset="UTF-8" />
-  <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png" />
-  <link rel="manifest" href="images/site.webmanifest" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link href="styles.css" rel="stylesheet" />
-  <!-- google fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Russo+One&family=Titillium+Web:wght@400;600;700&display=swap"
-    rel="stylesheet" />
-  <!-- font awesome -->
-  <script src="https://kit.fontawesome.com/9d44445160.js" crossorigin="anonymous"></script>
-</head>
-
-<body>
-  <header class="header | container bg--dark">
-    <a href="#">
-      <h2 class="header__logo">SB.</h2>
-    </a>
-    <nav class="header__nav" id="navbar">
-      <a href="#projects">Projects</a>
-      <span class="horizontal-line--dotted horizontal-line--dark"></span>
-      <a href="#about">About</a>
-      <span class="horizontal-line--dotted horizontal-line--dark"></span>
-      <a href="#connect" class="txt--bold">Connect</a>
-    </nav>
-  </header>
-  <main class="main | container">
-    <section class="welcome" id="welcome-section">
-      <h1 class="welcome__title">Front-end Web Developer</h1>
-      <p class="welcome__paragraph">
-        Hi, I am <span class="txt--dotted-underline">Snehamoy Bag</span>. A
-        passionate Frontend Web Developer based in West Bengal, India.
-      </p>
-      <div class="social-links">
-        <a href="https://github.com/snehamoybag" target="_blank" aria-label="github"><i class="fa-brands fa-github"
-            id="profile-link"></i></a>
-        <a href="https://www.linkedin.com/in/snehamoy-bag-a83509238/" target="_blank" aria-label="linkedin"><i
-            class="fa-brands fa-linkedin"></i></a>
-      </div>
-    </section>
-    <section class="skills | section-padding">
-      <h2 class="section-title">Skills</h2>
-      <div class="skills__icons">
-        <div class="skills__icon">
-          <i class="fa-brands fa-html5"></i>
-          <p>Html</p>
+  <body>
+    <header class="header | container bg--dark">
+      <a href="#">
+        <h2 class="header__logo">SB.</h2>
+      </a>
+      <nav class="header__nav" id="navbar">
+        <a href="#projects">Projects</a>
+        <span class="horizontal-line--dotted horizontal-line--dark"></span>
+        <a href="#about">About</a>
+        <span class="horizontal-line--dotted horizontal-line--dark"></span>
+        <a href="#connect" class="txt--bold">Connect</a>
+      </nav>
+    </header>
+    <main class="main | container">
+      <section class="welcome" id="welcome-section">
+        <h1 class="welcome__title">Front-end Web Developer</h1>
+        <p class="welcome__paragraph">
+          Hi, I am <span class="txt--dotted-underline">Snehamoy Bag</span>. A
+          passionate Frontend Web Developer based in West Bengal, India.
+        </p>
+        <div class="social-links">
+          <a
+            href="https://github.com/snehamoybag"
+            target="_blank"
+            aria-label="github"
+            ><i class="fa-brands fa-github" id="profile-link"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/snehamoy-bag-a83509238/"
+            target="_blank"
+            aria-label="linkedin"
+            ><i class="fa-brands fa-linkedin"></i
+          ></a>
         </div>
-        <div class="skills__icon">
-          <i class="fa-brands fa-css3-alt"></i>
-          <p>Css</p>
-        </div>
-        <div class="skills__icon">
-          <i class="fa-brands fa-square-js"></i>
-          <p>Javascript</p>
-        </div>
-        <div class="skills__icon">
-          <i class="fa-brands fa-sass"></i>
-          <p>Scss</p>
-        </div>
-        <div class="skills__icon">
-          <img src="images/tailwind-icon.svg" alt="tailwind" class="skills__icon_img" />
-          <p>Tailwind</p>
-        </div>
-        <div class="skills__icon">
-          <i class="fa-brands fa-react"></i>
-          <p>React</p>
-        </div>
-      </div>
-    </section>
-    <section class="projects-container | section-padding" id="projects">
-      <h2 class="section-title">Projects</h2>
-      <div class="projects__wrapper">
-        <div class="project">
-          <img src="images/ip-address-tracker-app-cover-img.jpg" alt="IP address tracker app"
-            class="project__thumbnail" />
-          <h3 class="project__title project-title">IP Address Tracker App</h3>
-          <p class="project__description">
-            Lorem ipsum dolor sit amet, officia excepteur ex fugiat
-            reprehenderit enim labore culpa sint ad nisi Lorem pariatur mollit
-            ex esse exercitation amet. Nisi anim cupidatat excepteur officia.
-            Reprehenderit nostrud nostrud ipsum Lorem est aliquip amet
-            voluptate voluptate dolor minim nulla est proident. Nostrud
-            officia pariatur ut officia. Sit irure elit esse ea nulla sunt ex
-            occaecat reprehenderit commodo officia dolor Lorem duis laboris
-            cupidatat officia voluptate. Culpa proident adipisicing id nulla
-            nisi laboris ex in Lorem sunt duis officia eiusmod. Aliqua
-            reprehenderit commodo ex non excepteur duis sunt velit enim.
-            Voluptate laboris sint cupidatat ullamco ut ea consectetur et est
-            culpa et culpa duis.
-          </p>
-          <div class="project__links">
-            <a class="project__links_code" href=""><i class="fa-brands fa-github"></i><span>Code</span></a>
-            <a class="project__links_preview" href=""><i class="fa-regular fa-eye"></i><span>Preview</span></a>
+      </section>
+      <section class="skills | section-padding">
+        <h2 class="section-title">Skills</h2>
+        <div class="skills__icons">
+          <div class="skills__icon">
+            <i class="fa-brands fa-html5"></i>
+            <p>Html</p>
+          </div>
+          <div class="skills__icon">
+            <i class="fa-brands fa-css3-alt"></i>
+            <p>Css</p>
+          </div>
+          <div class="skills__icon">
+            <i class="fa-brands fa-square-js"></i>
+            <p>Javascript</p>
+          </div>
+          <div class="skills__icon">
+            <i class="fa-brands fa-sass"></i>
+            <p>Scss</p>
+          </div>
+          <div class="skills__icon">
+            <img
+              src="images/tailwind-icon.svg"
+              alt="tailwind"
+              class="skills__icon_img"
+            />
+            <p>Tailwind</p>
+          </div>
+          <div class="skills__icon">
+            <i class="fa-brands fa-react"></i>
+            <p>React</p>
           </div>
         </div>
-        <div class="project">
-          <img src="images/signup-login-page-cover.jpg" alt="project signup form" class="project__thumbnail" />
-          <h3 class="project__title project-title">Signup Page</h3>
-          <p class="project__description">
-            Lorem ipsum dolor sit amet, officia excepteur ex fugiat
-            reprehenderit enim labore culpa sint ad nisi Lorem pariatur mollit
-            ex esse exercitation amet. Nisi anim cupidatat excepteur officia.
-            Reprehenderit nostrud nostrud ipsum Lorem est aliquip amet
-            voluptate voluptate dolor minim nulla est proident. Nostrud
-            officia pariatur ut officia. Sit irure elit esse ea nulla sunt ex
-            occaecat reprehenderit commodo officia dolor Lorem duis laboris
-            cupidatat officia voluptate. Culpa proident adipisicing id nulla
-            nisi laboris ex in Lorem sunt duis officia eiusmod. Aliqua
-            reprehenderit commodo ex non excepteur duis sunt velit enim.
-            Voluptate laboris sint cupidatat ullamco ut ea consectetur et est
-            culpa et culpa duis.
-          </p>
-          <div class="project__links">
-            <a class="project__links_code" href=""><i class="fa-brands fa-github"></i><span>Code</span></a>
-            <a class="project__links_preview" href=""><i class="fa-regular fa-eye"></i><span>Preview</span></a>
-          </div>
-        </div>
-        <div class="project">
-          <img src="images/accordion-cover-page.png" alt="project f a q accordion" class="project__thumbnail" />
-          <h3 class="project__title project-title">F.A.Q Accordion</h3>
-          <p class="project__description">
-            Lorem ipsum dolor sit amet, officia excepteur ex fugiat
-            reprehenderit enim labore culpa sint ad nisi Lorem pariatur mollit
-            ex esse exercitation amet. Nisi anim cupidatat excepteur officia.
-            Reprehenderit nostrud nostrud ipsum Lorem est aliquip amet
-            voluptate voluptate dolor minim nulla est proident. Nostrud
-            officia pariatur ut officia. Sit irure elit esse ea nulla sunt ex
-            occaecat reprehenderit commodo officia dolor Lorem duis laboris
-            cupidatat officia voluptate. Culpa proident adipisicing id nulla
-            nisi laboris ex in Lorem sunt duis officia eiusmod. Aliqua
-            reprehenderit commodo ex non excepteur duis sunt velit enim.
-            Voluptate laboris sint cupidatat ullamco ut ea consectetur et est
-            culpa et culpa duis.
-          </p>
-          <div class="project__links">
-            <a class="project__links_code" href=""><i class="fa-brands fa-github"></i><span>Code</span></a>
-            <a class="project__links_preview" href=""><i class="fa-regular fa-eye"></i><span>Preview</span></a>
-          </div>
-        </div>
-        <div class="project">
-          <img src="images/age-calculator-cover-image.jpg" alt="project age calculator" class="project__thumbnail" />
-          <h3 class="project__title project-title">Age Calculator App</h3>
-          <p class="project__description">
-            Lorem ipsum dolor sit amet, officia excepteur ex fugiat
-            reprehenderit enim labore culpa sint ad nisi Lorem pariatur mollit
-            ex esse exercitation amet. Nisi anim cupidatat excepteur officia.
-            Reprehenderit nostrud nostrud ipsum Lorem est aliquip amet
-            voluptate voluptate dolor minim nulla est proident. Nostrud
-            officia pariatur ut officia. Sit irure elit esse ea nulla sunt ex
-            occaecat reprehenderit commodo officia dolor Lorem duis laboris
-            cupidatat officia voluptate. Culpa proident adipisicing id nulla
-            nisi laboris ex in Lorem sunt duis officia eiusmod. Aliqua
-            reprehenderit commodo ex non excepteur duis sunt velit enim.
-            Voluptate laboris sint cupidatat ullamco ut ea consectetur et est
-            culpa et culpa duis.
-          </p>
-          <div class="project__links">
-            <a class="project__links_code" href=""><i class="fa-brands fa-github"></i><span>Code</span></a>
-            <a class="project__links_preview" href=""><i class="fa-regular fa-eye"></i><span>Preview</span></a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <div class="even-columns">
-      <section class="about | bg--dark bg--dark_texture section-padding" id="about">
-        <h2 class="section-title">About</h2>
-        <div class="about__wrapper">
-          <div class="about__img-wrapper">
-            <img src="images/my-prof-pic.jpg" alt="picture of snehamoy bag" class="about__img" />
-            <div class="social-links">
-              <a href="https://github.com/snehamoybag" target="_blank" aria-label="github"><i
-                  class="fa-brands fa-github"></i></a>
-              <a href="https://www.linkedin.com/in/snehamoy-bag-a83509238/" target="_blank" aria-label="linkedin"><i
-                  class="fa-brands fa-linkedin"></i></a>
-              <a href="/" aria-label="download resume" download><i class="fa-regular fa-file"></i></a>
+      </section>
+      <section class="projects-container | section-padding" id="projects">
+        <h2 class="section-title">Projects</h2>
+        <div class="projects__wrapper">
+          <div class="project">
+            <img
+              src="images/ip-address-tracker-app-cover-img.jpg"
+              alt="IP address tracker app"
+              class="project__thumbnail"
+            />
+            <h3 class="project__title project-title">IP Address Tracker App</h3>
+            <p class="project__description">
+              It is a web app that can track any IP address or domain. On page
+              load, the app will detect your IP address and show location
+              information and display it on a map. You can then search for any
+              IP address by typing it in the search bar, and it will display all
+              the necessary details of that IP or domain addresss. If you
+              provide an invalid IP or domain address the app will throw an
+              error. The app is built using <em>HTML</em>, <em>CSS</em> and
+              <em>Javascript</em> and is responsive. It uses <em>Ipify</em> and
+              <em>Leafjs</em> APIs to fetch and display data on the screen.
+            </p>
+            <div class="project__links">
+              <a
+                class="project__links_code"
+                href="https://github.com/snehamoybag/fem-ip-address-tracker"
+                target="_blank"
+                ><i class="fa-brands fa-github"></i><span>Code</span></a
+              >
+              <a
+                class="project__links_preview"
+                href="https://snehamoybag.github.io/fem-ip-address-tracker"
+                target="_blank"
+                ><i class="fa-regular fa-eye"></i><span>Preview</span></a
+              >
             </div>
           </div>
-          <div class="about__txt-wrapper">
-            <p>
-              Hi, I'm
-              <span class="txt--bold txt--dotted-underline">Snehamoy Bag</span>, a frontend web developer specializing
-              in accessibility and
-              user experience. I'm dedicated to creating inclusive digital
-              solutions that are visually appealing, functional, and
-              accessible to all users.
+          <div class="project">
+            <img
+              src="images/signup-login-page-cover.jpg"
+              alt="project signup form"
+              class="project__thumbnail"
+            />
+            <h3 class="project__title project-title">Signup Page</h3>
+            <p class="project__description">
+              A signup page built using <em>HTML</em>, <em>CSS</em> and
+              <em>Javascript</em>. The project put my form verification skills
+              into a test. One must fill all the input fields correctly in order
+              to signup. The user gets notified in real time as they type, which
+              helps the user to type the correct/acceptable pattern in the input
+              field. The page is also completely responsive, so can be accessed
+              and used from all types of devices and screen resolutions.
             </p>
-            <p>
-              My passion for web development started as a personal pursuit and
-              has grown into a deep-rooted commitment. I continuously expand
-              my knowledge and stay updated with industry trends to deliver
-              modern websites that prioritize usability and smooth
-              interactions.
+            <div class="project__links">
+              <a
+                class="project__links_code"
+                href="https://github.com/snehamoybag/FEM-signup-login-component"
+                target="_blank"
+                ><i class="fa-brands fa-github"></i><span>Code</span></a
+              >
+              <a
+                class="project__links_preview"
+                href="https://snehamoybag.github.io/FEM-signup-login-component"
+                target="_blank"
+                ><i class="fa-regular fa-eye"></i><span>Preview</span></a
+              >
+            </div>
+          </div>
+          <div class="project">
+            <img
+              src="images/clipboard-landing-page.jpeg"
+              alt="project signup form"
+              class="project__thumbnail"
+            />
+            <h3 class="project__title project-title">Clipboard Landing Page</h3>
+            <p class="project__description">
+              Fully responsive Landing Page with scroll animations. Built using
+              <em>HTML</em>, <em>Sass/SCSS</em> and <em>Javascript</em>. This
+              one was on of the first project where I used Vite with Sass and
+              <em>AOS Library</em>. The landing page follows all the
+              accessibility standards and conventions. The animations on scroll
+              gave the page a much needed immersiveness that it deserved.
             </p>
-            <p>
-              I believe in the power of technology to empower and include
-              everyone. Using my skills in
-              <strong class="txt--clr-accent">HTML</strong>,
-              <strong class="txt--clr-accent">CSS</strong>,
-              <strong class="txt--clr-accent">Javascript</strong>, and
-              <strong class="txt--clr-accent">React</strong>, I strive to
-              build seamless user experiences that make a lasting impact.
+            <div class="project__links">
+              <a
+                class="project__links_code"
+                href="https://github.com/snehamoybag/fem-clipboard-landing-page"
+                target="_blank"
+                ><i class="fa-brands fa-github"></i><span>Code</span></a
+              >
+              <a
+                class="project__links_preview"
+                href="https://snehamoybag.github.io/fem-clipboard-landing-page"
+                target="_blank"
+                ><i class="fa-regular fa-eye"></i><span>Preview</span></a
+              >
+            </div>
+          </div>
+          <div class="project">
+            <img
+              src="images/accordion-cover-page.png"
+              alt="project f a q accordion"
+              class="project__thumbnail"
+            />
+            <h3 class="project__title project-title">F.A.Q Accordion</h3>
+            <p class="project__description">
+              Accordions are essential parts of modern web. In this project I
+              wanted to learn how to build one. I used
+              <em>HTML</em>, <em>CSS</em> and <em>Javascript</em> to achieve my
+              desired outcome. This was the first ever project where I used
+              Javascript to build something. Looking back at it now, I can
+              certainly understand the Javascript can be written cleaner. I'll
+              definetly update it at somepoint in the future. Nonetheless it was
+              one of my proudest project back at that time, it is responsive,
+              modern and stylish. Definetly deserves a spot in this portfolio.
+              😄
             </p>
-            <p>
-              Let's collaborate to bring your web vision to life while making
-              a positive difference in the digital landscape.
+            <div class="project__links">
+              <a
+                class="project__links_code"
+                href="https://github.com/snehamoybag/FM-FAQ-Accordion-with-JS"
+                target="_blank"
+                ><i class="fa-brands fa-github"></i><span>Code</span></a
+              >
+              <a
+                class="project__links_preview"
+                href="https://snehamoybag.github.io/FM-FAQ-Accordion-with-JS"
+                target="_blank"
+                ><i class="fa-regular fa-eye"></i><span>Preview</span></a
+              >
+            </div>
+          </div>
+          <div class="project">
+            <img
+              src="images/insure-landing-page.jpeg"
+              alt="project age calculator"
+              class="project__thumbnail"
+            />
+            <h3 class="project__title project-title">Insure Landing Page</h3>
+            <p class="project__description">
+              Responsive landing page built using <em>HTML</em>,
+              <em>Sass/SCSS</em>, <em>Javascript</em>. I used Vite to complile
+              my Sass files. This is a simple, responsive static page that
+              follows all the accessibility standards and conventions of modern
+              web. I used Sass partials to make various CSS components that can
+              be reused again and again. I really like how clean and modern the
+              site looks.
             </p>
+            <div class="project__links">
+              <a
+                class="project__links_code"
+                href="https://github.com/snehamoybag/fem-insure-landing-page"
+                target="_blank"
+                ><i class="fa-brands fa-github"></i><span>Code</span></a
+              >
+              <a
+                class="project__links_preview"
+                href="https://snehamoybag.github.io/fem-insure-landing-page/"
+                target="_blank"
+                ><i class="fa-regular fa-eye"></i><span>Preview</span></a
+              >
+            </div>
+          </div>
+          <div class="project">
+            <img
+              src="images/rock-paper-scissors.jpeg"
+              alt="project f a q accordion"
+              class="project__thumbnail"
+            />
+            <h3 class="project__title project-title">Rock Paper Scissors</h3>
+            <p class="project__description">
+              Fully "responsive rock-paper-scissors" game build using
+              <em>HTML</em>, <em>SCSS</em> and <em>Javascript</em>. The game
+              logic was simple enough to build but the thing that made me sweat,
+              was the animations! Took me few trials and errors to make the
+              animations responsively correct so it can be played on all types
+              of devices. Game runs super smooth and can be fun!
+            </p>
+            <div class="project__links">
+              <a
+                class="project__links_code"
+                href="https://github.com/snehamoybag/rock-paper-scissor-lizard-spock"
+                target="_blank"
+                ><i class="fa-brands fa-github"></i><span>Code</span></a
+              >
+              <a
+                class="project__links_preview"
+                href="https://snehamoybag.github.io/rock-paper-scissor-lizard-spock"
+                target="_blank"
+                ><i class="fa-regular fa-eye"></i><span>Preview</span></a
+              >
+            </div>
           </div>
         </div>
       </section>
-      <section id="connect" class="contact | section-padding">
-        <h2 class="section-title">Let's Connect</h2>
-        <form action="post" class="contact__form">
-          <label for="f-name">
-            Your Name :
-            <input type="text" id="f-name" name="name" placeholder="John Doe" required />
-          </label>
-          <label for="f-email">
-            Email Address :
-            <input type="email" id="f-email" name="email" placeholder="john@gmail.com" required />
-          </label>
-          <label for="f-message">
-            Message :
-            <textarea name="message" id="f-message" placeholder="Say hi..." rows="5" required></textarea>
-          </label>
-          <button>
-            <i class="fa-regular fa-paper-plane"></i> <span>Send</span>
-          </button>
-        </form>
-      </section>
-    </div>
-  </main>
-  <footer class="footer | bg--dark section-padding">
-    <div class="social-links">
-      <a href="https://github.com/snehamoybag" target="_blank" aria-label="github"><i
-          class="fa-brands fa-github"></i></a>
-      <a href="https://www.linkedin.com/in/snehamoy-bag-a83509238/" target="_blank" aria-label="linkedin"><i
-          class="fa-brands fa-linkedin"></i></a>
-    </div>
-    <p class="footer__credits">
-      <small>&copy; Snehamoy Bag All Rigthts Reserved 2023</small>
-    </p>
-  </footer>
-</body>
-
+      <div class="even-columns">
+        <section
+          class="about | bg--dark bg--dark_texture section-padding"
+          id="about"
+        >
+          <h2 class="section-title">About</h2>
+          <div class="about__wrapper">
+            <div class="about__img-wrapper">
+              <img
+                src="images/my-prof-pic.jpg"
+                alt="picture of snehamoy bag"
+                class="about__img"
+              />
+              <div class="social-links">
+                <a
+                  href="https://github.com/snehamoybag"
+                  target="_blank"
+                  aria-label="github"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+                <a
+                  href="https://www.linkedin.com/in/snehamoy-bag-a83509238/"
+                  target="_blank"
+                  aria-label="linkedin"
+                  ><i class="fa-brands fa-linkedin"></i
+                ></a>
+                <a href="/" aria-label="download resume" download
+                  ><i class="fa-regular fa-file"></i
+                ></a>
+              </div>
+            </div>
+            <div class="about__txt-wrapper">
+              <p>
+                Hi, I'm
+                <span class="txt--bold txt--dotted-underline">Snehamoy Bag</span
+                >, a frontend web developer specializing in accessibility and
+                user experience. I'm dedicated to creating inclusive digital
+                solutions that are visually appealing, functional, and
+                accessible to all users.
+              </p>
+              <p>
+                My passion for web development started as a personal pursuit and
+                has grown into a deep-rooted commitment. I continuously expand
+                my knowledge and stay updated with industry trends to deliver
+                modern websites that prioritize usability and smooth
+                interactions.
+              </p>
+              <p>
+                I believe in the power of technology to empower and include
+                everyone. Using my skills in
+                <strong class="txt--clr-accent">HTML</strong>,
+                <strong class="txt--clr-accent">CSS</strong>,
+                <strong class="txt--clr-accent">Javascript</strong>, and
+                <strong class="txt--clr-accent">React</strong>, I strive to
+                build seamless user experiences that make a lasting impact.
+              </p>
+              <p>
+                Let's collaborate to bring your web vision to life while making
+                a positive difference in the digital landscape.
+              </p>
+            </div>
+          </div>
+        </section>
+        <section id="connect" class="contact | section-padding">
+          <h2 class="section-title">Let's Connect</h2>
+          <form action="post" class="contact__form">
+            <label for="f-name">
+              Your Name :
+              <input
+                type="text"
+                id="f-name"
+                name="name"
+                placeholder="John Doe"
+                required
+              />
+            </label>
+            <label for="f-email">
+              Email Address :
+              <input
+                type="email"
+                id="f-email"
+                name="email"
+                placeholder="john@gmail.com"
+                required
+              />
+            </label>
+            <label for="f-message">
+              Message :
+              <textarea
+                name="message"
+                id="f-message"
+                placeholder="Say hi..."
+                rows="5"
+                required
+              ></textarea>
+            </label>
+            <button>
+              <i class="fa-regular fa-paper-plane"></i> <span>Send</span>
+            </button>
+          </form>
+        </section>
+      </div>
+    </main>
+    <footer class="footer | bg--dark section-padding">
+      <div class="social-links">
+        <a
+          href="https://github.com/snehamoybag"
+          target="_blank"
+          aria-label="github"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+        <a
+          href="https://www.linkedin.com/in/snehamoy-bag-a83509238/"
+          target="_blank"
+          aria-label="linkedin"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+      </div>
+      <p class="footer__credits">
+        <small>&copy; Snehamoy Bag All Rigthts Reserved 2023</small>
+      </p>
+    </footer>
+  </body>
 </html>
